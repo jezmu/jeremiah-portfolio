@@ -1,55 +1,219 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Jeremiah Muiruri | Professional CV</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Professional CV website for Jeremiah Njoroge Muiruri, Accountant and Financial Consultant.">
+  <title>Jeremiah Njoroge Muiruri | Professional CV</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<nav><b>Jeremiah<span>.</span></b><div><a href="#about">About</a><a href="#project">Project</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></nav>
-<section class="hero">
-<p class="eyebrow">ACCOUNTING • FINANCE • DATA ANALYTICS</p>
-<h1>Accountant and Finance Professional with Banking, Reconciliation and Reporting Experience.</h1>
-<p>I am Jeremiah Njoroge Muiruri, an accountant and financial consultant developing my career in data engineering. I combine finance experience with SQL, PostgreSQL, Python, Flask, Docker and data-quality practices.</p>
-<a class="button" href="#project">View featured project</a>
-</section>
-</header>
-<main>
-<section id="about">
-<p class="eyebrow">01 / ABOUT ME</p><h2>Professional Experience and Financial Expertise.</h2>
-<p>My experience includes banking operations, reconciliations, financial reporting, internal controls, tax-related documentation and cost analysis. I am applying this background to build systems that collect, validate, store, transform and prepare data for reporting and decision-making.</p>
-</section>
-<section id="project" class="card">
-<p class="eyebrow">02 / FEATURED PROJECT</p><h2>Jezmu: A Data Engineering Platform for SME Financial Management</h2>
-<p>Jezmu addresses a practical problem: SMEs often generate financial records but struggle to collect, validate, organize and transform them into reliable business information.</p>
-<h3>Data pipeline concept</h3>
-<div class="pipeline"><div>Raw transactions</div><b>↓</b><div>Ingestion</div><b>↓</b><div>Validation and quality checks</div><b>↓</b><div>PostgreSQL storage</div><b>↓</b><div>SQL transformations</div><b>↓</b><div>Analytics-ready datasets</div></div>
-<h3>Technology stack</h3><p class="tags"><span>Python</span><span>Flask</span><span>PostgreSQL</span><span>SQL</span><span>Docker</span><span>Git/GitHub</span><span>Data quality</span></p>
-<h3>Implemented foundation</h3>
-<ul><li>Flask financial application and PostgreSQL database.</li><li>Company, user, role, accounting-period and transaction structures.</li><li>Foreign-key relationships and database integrity structures.</li><li>SME chart-of-accounts template and fiscal periods.</li><li>Initial transaction data-quality checks.</li></ul>
-<h3>Initial data-quality results</h3>
-<div class="metrics"><div><strong>4</strong><small>Demo transactions inspected</small></div><div><strong>0</strong><small>Missing descriptions</small></div><div><strong>0</strong><small>Invalid amounts</small></div><div><strong>0</strong><small>Possible duplicates</small></div></div>
-<p class="note">These results apply only to the initial demo dataset and do not represent complete validation of all database tables.</p>
-<a class="button" href="https://github.com/jezmu/jezmu-finance" target="_blank">View GitHub repository</a>
-</section>
-<section id="experience">
-<p class="eyebrow">03 / PROFESSIONAL EXPERIENCE</p><h2>Professional Experience.</h2>
-<div class="timeline">
-<article><b>Reconciliation Coordinator — Family Bank</b><small>Mar 2022 – Oct 2025</small><p>Managed reconciliation activities, investigated discrepancies, supported operational teams, assisted auditors and prepared age-analysis reports.</p></article>
-<article><b>Financial Consultant — PeakServ Consultants Ltd</b><small>Dec 2016 – Feb 2022</small><p>Supported financial reporting, reconciliations, compliance, auditing, forecasting and annual budgeting.</p></article>
-<article><b>Senior Accountant — Family Bank</b><small>Mar 2012 – Dec 2016</small><p>Conducted cost analysis, processed supplier payments, supported statutory submissions and prepared operational reports.</p></article>
-<article><b>Operations Officer — Family Bank</b><small>Jul 2010 – Feb 2012</small><p>Supported customer service, branch operations, transaction processing, ATM reconciliation and general-ledger checks.</p></article>
-<article><b>Accountant — Alliance Garment Industries Ltd</b><small>2006 – 2010</small><p>Prepared budgets and cost reports, processed payments and accounting entries, and supported VAT documentation.</p></article>
-</div>
-</section>
-<section>
-<p class="eyebrow">04 / SKILLS AND EDUCATION</p><h2>Skills, Education and Certifications.</h2>
-<div class="grid"><article><h3>Data Engineering</h3><p>Data ingestion, quality checks, transformation and analytics-ready datasets.</p></article><article><h3>Databases</h3><p>PostgreSQL, SQL, relational modelling, foreign keys and constraints.</p></article><article><h3>Development</h3><p>Python, Flask, Docker, Git and GitHub.</p></article><article><h3>Finance</h3><p>Reconciliations, financial reporting, cost analysis, bookkeeping and controls.</p></article></div>
-<p><b>Education and certifications:</b> MBA in Finance; Bachelor of Commerce in Accounting; CPA (K); ALX Data Analytics and Data Science; ALX Software Engineering; ALX Professional Foundations.</p>
-</section>
-<section id="contact" class="card"><p class="eyebrow">05 / CONTACT</p><h2>Let's connect.</h2><p>Email: jereminjoro@gmail.com</p><p> </p><p>Location: Nairobi, Kenya</p><p>GitHub: <a href="https://github.com/jezmu/jezmu-finance">jezmu/jezmu-finance</a></p><p>LinkedIn: <a href="https://www.linkedin.com/in/jeremiahnjoroge" target="_blank">linkedin.com/in/jeremiahnjoroge</a></p></section>
-</main>
-<footer>© 2026 Jeremiah Njoroge Muiruri — Professional CV — Accounting and Finance Specialist</footer>
-</body></html>
+  <header class="topbar">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top">Jeremiah<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="profile-mark"><img src="profile.jpg" alt="Jeremiah Njoroge Muiruri"></div>
+      <div class="hero-content">
+        <p class="eyebrow">ACCOUNTING • FINANCE • DATA ANALYTICS</p>
+        <h1>Jeremiah Njoroge Muiruri</h1>
+        <h2>Accountant | Financial Consultant</h2>
+        <p class="location">Nairobi, Kenya</p>
+        <div class="contact-pills">
+          <a href="mailto:jereminjoro@gmail.com">jereminjoro@gmail.com</a>
+          <a href="https://www.linkedin.com/in/jeremiahnjoroge" target="_blank" rel="noopener">LinkedIn profile ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>Professional profile</h2>
+      </div>
+      <div class="card">
+        <p>Jeremiah Njoroge Muiruri is a corporate accountant and financial consultant with a strong background in financial reporting, reconciliation management, internal controls, and data-driven decision support. He has experience working across fast-paced corporate environments where accuracy, compliance, and operational efficiency are essential.</p>
+        <p>Jeremiah specializes in streamlining financial processes, enhancing reconciliation controls, and strengthening the integrity of general ledger and sub-ledger systems. His experience includes supporting month-end and year-end close cycles, investigating discrepancies, and improving financial reporting workflows.</p>
+        <p>Beyond traditional accounting, Jeremiah leverages modern tools—from advanced Excel techniques to AI-assisted workflows—to improve productivity, reduce errors, and support smarter financial analysis.</p>
+      </div>
+    </section>
+
+    <section class="container dashboard" aria-label="CV overview">
+      <a href="#education"><span class="icon">🎓</span><strong>Education</strong><small>Qualifications</small></a>
+      <a href="#experience"><span class="icon">💼</span><strong>Experience</strong><small>Professional history</small></a>
+      <a href="#skills"><span class="icon">📊</span><strong>Skills</strong><small>Finance and data</small></a>
+      <a href="#projects"><span class="icon">🧩</span><strong>Projects</strong><small>Selected work</small></a>
+    </section>
+
+    <section id="experience" class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">02 / EXPERIENCE</p>
+        <h2>Professional experience</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="card">
+            <div class="role-header">
+              <div><h3>Reconciliation Coordinator</h3><p class="company">Family Bank</p></div>
+              <span class="date">Mar 2022 – Oct 2025</span>
+            </div>
+            <ul>
+              <li>Performed daily reconciliation of general ledgers assigned to Head Office Operations units to identify irregularities and coordinate corrective action.</li>
+              <li>Supported DFS Operations and branches in resolving customer disputes relating to Paybill, KRA, KPLC and eCitizen transactions.</li>
+              <li>Assisted internal and external auditors by preparing documentation supporting Operations transactions.</li>
+              <li>Represented the reconciliation department during Core Banking Software implementation and supported discussions around a reconciliation management system.</li>
+              <li>Prepared monthly age-analysis reports on outstanding transactions in assigned ledger accounts.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="card">
+            <div class="role-header">
+              <div><h3>Financial Consultant</h3><p class="company">PeakServe Consulting Ltd</p></div>
+              <span class="date">Dec 2016 – Feb 2022</span>
+            </div>
+            <ul>
+              <li>Prepared financial reports, including balance sheets, cash-flow statements and income statements for SMEs.</li>
+              <li>Reconciled accounts payable, accounts receivable and petty-cash records.</li>
+              <li>Supported tax compliance, auditing, forecasting and annual budgeting activities.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="card">
+            <div class="role-header">
+              <div><h3>Senior Accountant</h3><p class="company">Family Bank</p></div>
+              <span class="date">Mar 2012 – Dec 2016</span>
+            </div>
+            <ul>
+              <li>Conducted quarterly cost analysis using Excel.</li>
+              <li>Processed monthly supplier payments and prepared related reports.</li>
+              <li>Coordinated statutory submissions, including VAT, withholding tax, stamp duty and excise duty reports.</li>
+              <li>Processed and posted daily Kenswitch ATM activity, client activity reports and Western Union transactions.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="card">
+            <div class="role-header">
+              <div><h3>Operations Officer</h3><p class="company">Family Bank</p></div>
+              <span class="date">Jul 2010 – Feb 2012</span>
+            </div>
+            <ul>
+              <li>Handled customer queries, product information, records and daily, weekly and monthly reports.</li>
+              <li>Supported branch teller operations, cash and non-cash transactions, M-Pesa, agency and Western Union services.</li>
+              <li>Performed ATM and general-ledger reconciliations, ATM deposit confirmations and replenishment checks.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="card">
+            <div class="role-header">
+              <div><h3>Accountant</h3><p class="company">Alliance Garment Industries Ltd</p></div>
+              <span class="date">2006 – 2010</span>
+            </div>
+            <ul>
+              <li>Prepared approximately KES 140 million in monthly budget reports for three internal departments.</li>
+              <li>Processed an average of KES 80 million in monthly supplier payments.</li>
+              <li>Oversaw tax invoice and export-document preparation for 20 foreign clients.</li>
+              <li>Prepared cost-analysis, stock and work-in-progress reports using Sage Pastel.</li>
+              <li>Entered receipts, payments, supplier invoices, credit notes and debit notes into the accounting system.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="container section two-column">
+      <div>
+        <div class="section-heading">
+          <p class="eyebrow">03 / EDUCATION</p>
+          <h2>Education and certifications</h2>
+        </div>
+        <div class="card">
+          <div class="education-item">
+            <h3>Master of Business Administration — Finance</h3>
+            <p>University of Nairobi · With Distinction</p>
+            <small>Thesis: The effects of liquidity on profitability of commercial banks in Kenya.</small>
+          </div>
+          <div class="education-item">
+            <h3>Bachelor of Commerce — Accounting</h3>
+            <p>University of Nairobi · Second Class Honours (Upper Division)</p>
+          </div>
+          <div class="education-item">
+            <h3>CPA (K)</h3>
+            <p>Certified Public Accountant of Kenya</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">04 / SKILLS</p>
+          <h2>Core competencies</h2>
+        </div>
+        <div class="card">
+          <div class="skill-group"><h3>Accounting and finance</h3><p>Financial reporting, reconciliations, internal controls, budgeting, forecasting, cost analysis, tax documentation and audit support.</p></div>
+          <div class="skill-group"><h3>Data and technology</h3><p>Excel, SQL, PostgreSQL, Python, Flask, Docker, Git/GitHub, data quality and reporting workflows.</p></div>
+          <div class="skill-group"><h3>Professional strengths</h3><p>Discrepancy investigation, process improvement, stakeholder support, documentation and analytical problem-solving.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">05 / SELECTED PROJECT</p>
+        <h2>Jezmu Finance</h2>
+      </div>
+      <div class="card project-card">
+        <p>Jezmu Finance is a developing finance and accounting platform concept focused on helping SMEs organize financial records and prepare reliable information for reporting and decision-making.</p>
+        <div class="tags"><span>Python</span><span>Flask</span><span>PostgreSQL</span><span>SQL</span><span>Docker</span><span>GitHub</span></div>
+        <a class="button" href="https://github.com/jezmu/jezmu-finance" target="_blank" rel="noopener">View project on GitHub ↗</a>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">06 / PROFESSIONAL DEVELOPMENT</p>
+        <h2>Additional learning</h2>
+      </div>
+      <div class="card learning-grid">
+        <div><h3>ALX Data Analytics and Data Science</h3><p>Data analysis, programming foundations and data-driven problem solving.</p></div>
+        <div><h3>ALX Software Engineering</h3><p>Programming and software development foundations.</p></div>
+        <div><h3>ALX Professional Foundations</h3><p>Professional skills for technology and business environments.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="container section contact-section">
+      <div class="card contact-card">
+        <p class="eyebrow">07 / CONTACT</p>
+        <h2>Let's connect.</h2>
+        <p>For professional opportunities, collaborations and enquiries:</p>
+        <a class="button" href="mailto:jereminjoro@gmail.com">Email me ↗</a>
+        <a class="text-link" href="https://www.linkedin.com/in/jeremiahnjoroge" target="_blank" rel="noopener">View LinkedIn profile ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Jeremiah Njoroge Muiruri · Professional CV</footer>
+</body>
+</html>
