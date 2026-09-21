@@ -202,3 +202,33 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: .8re
     justify-content: center;
   }
 }
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.contact-link span:not(.contact-icon) {
+  display: none;
+}
+
+.contact-icon {
+  font-size: 24px;
+}
+
+.x-icon {
+  font-size: 27px;
+  font-weight: bold;
+}
