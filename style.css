@@ -147,3 +147,58 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: .8re
   border-radius: 4px;
   font-size: 14px;
 }
+.contact-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.contact-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 14px 20px;
+  border: 1px solid #d9e0e5;
+  border-radius: 999px;
+  background: #ffffff;
+  text-decoration: none;
+  color: #243447;
+  box-shadow: 0 8px 20px rgba(36, 52, 71, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(36, 52, 71, 0.12);
+}
+
+.contact-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.linkedin-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 4px;
+  background: #0a66c2;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .contact-pills {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-pill {
+    justify-content: center;
+  }
+}
